@@ -1,20 +1,20 @@
 <h1>Contact</h1>
-<div>
-  <form>
+<div class='row col s4'>
+  <form class='col s4'>
     <div class="input-field">
-      <input type="text" name="name" required id="name">
+      <input ng-model='vm.contact.name' type="text" name="name" required id="name">
       <label for="name">Your Name (required)</label>
     </div>
     <div class="input-field">
-      <input type="email" name="email" required id="email">
+      <input ng-model='vm.contact.email' type="email" name="email" required id="email">
       <label for="email">Your email (required)</label>
     </div>
     <div class="input-field">
-      <input type="text" name="subject" required id="subject">
+      <input ng-model='vm.contact.subject' type="text" name="subject" required id="subject">
       <label for="email">Subject</label>
     </div>
     <div class="input-field">
-      <input type="text" name="message" required id="message">
+      <input ng-model='vm.contact.message' type="text" name="message" required id="message">
       <label for="email">Your Message</label>
     </div>
     <button type='submit'>Send</button>

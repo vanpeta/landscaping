@@ -1,13 +1,15 @@
-
 (function(){
-  angular.module('landscaping')
-  .controller('mainCotroller', mainCotroller)
+  'use strict';
 
-  mainCotroller.$inject=[];
+  angular
+  .module('landscaping')
+  .controller('mainController', mainController)
 
-  function mainCotroller(){
-    vm=this;
+  mainController.$inject=[];
+
+  function mainController(){
+    var vm=this;
     vm.test="testing"
 
   }
-})()
+})();
