@@ -33,7 +33,7 @@
     .state ('Contact', {
       url: '/Contact',
       templateUrl: 'js/contact/contact.html',
-      controller: 'mainController',
+      controller: 'contactController',
       controllerAs: 'vm'
     })
     $urlRouterProvider.otherwise('/');

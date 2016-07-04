@@ -8,11 +8,14 @@
   contactController.$inject = ["$http"];
 
   function contactController($http) {
-    var vm = $(this)
+    var vm = this
 
     vm.contact = {};
+    vm.sendForm = sendForm;
+
 
     function sendForm () {
+      console.log (vm.contact)
 
     }
   }
