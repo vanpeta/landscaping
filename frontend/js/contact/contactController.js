@@ -16,7 +16,13 @@
 
     function sendForm () {
       console.log (vm.contact)
-
+      $http({method: 'POST',
+        url: "",
+        data: vm.contact
+      })
+      .then(function(res) {
+        vm.user = res.data;
+      })
     }
   }
 

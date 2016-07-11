@@ -1,7 +1,7 @@
 <h3>Contact</h3>
-<p>{{vm.test}}</p>
+
 <div class='row col s4'>
-  <form class='col s4' ng-submit='vm.sendForm();'>
+  <form class='col s4' name='contactForm' ng-submit='vm.sendForm();'>
     <div class="input-field">
       <input ng-model='vm.contact.name' type="text" name="name" required id="name" class='validate'>
       <label for="name">Your Name (required)</label>
